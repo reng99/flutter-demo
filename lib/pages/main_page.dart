@@ -10,6 +10,7 @@ import 'tab_bar_and_app_bar.dart';
 import 'container_test_page.dart';
 import 'grid_view_page.dart';
 import 'bottom_app_bar_page.dart';
+import 'self_progress_bar_page.dart';
 
 class MainPage extends StatelessWidget {
   MainPage({Key? key}) : super(key: key);
@@ -35,6 +36,8 @@ class MainPage extends StatelessWidget {
         _pageNames[3], (context) => GridViewPage(title: _pageNames[3])));
     _itemData.add(RouteBean(
         _pageNames[4], (context) => BottomAppBarPage(title: _pageNames[4])));
+    _itemData.add(RouteBean(
+        _pageNames[5], (context) => SelfProgressBarPage(title: _pageNames[5])));
   }
 
   @override
