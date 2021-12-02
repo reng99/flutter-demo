@@ -8,11 +8,11 @@ class BasicAppBar extends StatefulWidget {
 
   @override
   State<StatefulWidget> createState() {
-    return BasicAppBarState();
+    return _BasicAppBarState();
   }
 }
 
-class BasicAppBarState extends State<BasicAppBar> {
+class _BasicAppBarState extends State<BasicAppBar> {
   _Choice _selectedChoice = _choices[0];
 
   _select(choice) => setState(() => _selectedChoice = choice);

@@ -8,6 +8,7 @@ import '../bean/route_bean.dart';
 import 'basic_app_bar.dart';
 import 'tab_bar_and_app_bar.dart';
 import 'container_test_page.dart';
+import 'grid_view_page.dart';
 
 class MainPage extends StatelessWidget {
   MainPage({Key? key}) : super(key: key);
@@ -16,6 +17,7 @@ class MainPage extends StatelessWidget {
     'Basic AppBar',
     'TabBar & AppBar',
     'Container Test',
+    'GrideView Test',
   ];
   final _itemData = <RouteBean>[];
 
@@ -27,6 +29,8 @@ class MainPage extends StatelessWidget {
         _pageNames[1], (context) => TabBarAndAppBar(title: _pageNames[1])));
     _itemData.add(RouteBean(
         _pageNames[2], (context) => ContainerTestPage(title: _pageNames[2])));
+    _itemData.add(RouteBean(
+        _pageNames[3], (context) => GridViewPage(title: _pageNames[3])));
   }
 
   @override

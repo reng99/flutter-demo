@@ -8,11 +8,11 @@ class TabBarAndAppBar extends StatefulWidget {
 
   @override
   State<StatefulWidget> createState() {
-    return TabBarAndAppBarState();
+    return _TabBarAndAppBarState();
   }
 }
 
-class TabBarAndAppBarState extends State<TabBarAndAppBar> {
+class _TabBarAndAppBarState extends State<TabBarAndAppBar> {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
