@@ -9,6 +9,7 @@ import 'basic_app_bar.dart';
 import 'tab_bar_and_app_bar.dart';
 import 'container_test_page.dart';
 import 'grid_view_page.dart';
+import 'bottom_app_bar_page.dart';
 
 class MainPage extends StatelessWidget {
   MainPage({Key? key}) : super(key: key);
@@ -18,6 +19,7 @@ class MainPage extends StatelessWidget {
     'TabBar & AppBar',
     'Container Test',
     'GrideView Test',
+    'BottomAppBar Page',
   ];
   final _itemData = <RouteBean>[];
 
@@ -31,6 +33,8 @@ class MainPage extends StatelessWidget {
         _pageNames[2], (context) => ContainerTestPage(title: _pageNames[2])));
     _itemData.add(RouteBean(
         _pageNames[3], (context) => GridViewPage(title: _pageNames[3])));
+    _itemData.add(RouteBean(
+        _pageNames[4], (context) => BottomAppBarPage(title: _pageNames[4])));
   }
 
   @override
