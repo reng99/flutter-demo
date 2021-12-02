@@ -1,4 +1,6 @@
-class Dimens {
+// ignore_for_file: constant_identifier_names
+
+class Dimension {
   static const ELEVATION_TITLE = 0.5;
 
   static const DIVIDE_HEIGHT = 1.0;
