@@ -6,12 +6,14 @@ import '../constants/dimension.dart';
 import '../bean/route_bean.dart';
 
 import 'basic_app_bar.dart';
+import 'tab_bar_and_app_bar.dart';
 
 class MainPage extends StatelessWidget {
   MainPage({Key? key}) : super(key: key);
 
   final _pageNames = [
     'Basic AppBar',
+    'TabBar & AppBar',
   ];
   final _itemData = <RouteBean>[];
 
@@ -19,6 +21,8 @@ class MainPage extends StatelessWidget {
     _itemData.clear();
     _itemData.add(RouteBean(
         _pageNames[0], (context) => BasicAppBar(title: _pageNames[0])));
+    _itemData.add(RouteBean(
+        _pageNames[1], (context) => TabBarAndAppBar(title: _pageNames[1])));
   }
 
   @override
