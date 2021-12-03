@@ -41,11 +41,11 @@ class _BottomAppBarPageState extends State<BottomAppBarPage>
       appBar: AppBar(
         title: Text(widget.title),
         elevation: Dimension.ELEVATION_TITLE,
-        leading: IconButton(
-          tooltip: 'Previous choice',
-          icon: Icon(Icons.arrow_back),
-          onPressed: () => _nextPage(-1),
-        ),
+        // leading: IconButton(
+        //   tooltip: 'Previous choice',
+        //   icon: const Icon(Icons.arrow_back),
+        //   onPressed: () => _nextPage(-1),
+        // ),
         actions: <Widget>[
           IconButton(
             onPressed: () => _nextPage(1),

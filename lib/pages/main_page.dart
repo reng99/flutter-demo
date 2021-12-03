@@ -10,7 +10,7 @@ import 'tab_bar_and_app_bar.dart';
 import 'container_test_page.dart';
 import 'grid_view_page.dart';
 import 'bottom_app_bar_page.dart';
-import 'self_progress_bar_page.dart';
+import 'fade_animation_page.dart';
 
 class MainPage extends StatelessWidget {
   MainPage({Key? key}) : super(key: key);
@@ -21,6 +21,7 @@ class MainPage extends StatelessWidget {
     'Container Test',
     'GrideView Test',
     'BottomAppBar Page',
+    'FadeAnimation Page',
   ];
   final _itemData = <RouteBean>[];
 
@@ -37,7 +38,7 @@ class MainPage extends StatelessWidget {
     _itemData.add(RouteBean(
         _pageNames[4], (context) => BottomAppBarPage(title: _pageNames[4])));
     _itemData.add(RouteBean(
-        _pageNames[5], (context) => SelfProgressBarPage(title: _pageNames[5])));
+        _pageNames[5], (context) => FadeAnimationPage(title: _pageNames[5])));
   }
 
   @override
