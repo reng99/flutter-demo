@@ -12,6 +12,7 @@ import 'grid_view_page.dart';
 import 'bottom_app_bar_page.dart';
 import 'fade_animation_page.dart';
 import 'input_test_page.dart';
+import 'data_loader_page.dart';
 
 class MainPage extends StatelessWidget {
   MainPage({Key? key}) : super(key: key);
@@ -24,6 +25,7 @@ class MainPage extends StatelessWidget {
     'BottomAppBar Page',
     'FadeAnimation Page',
     'InputTest Page',
+    'DataLoader Page',
   ];
   final _itemData = <RouteBean>[];
 
@@ -43,6 +45,8 @@ class MainPage extends StatelessWidget {
         _pageNames[5], (context) => FadeAnimationPage(title: _pageNames[5])));
     _itemData.add(RouteBean(
         _pageNames[6], (context) => InputTestPage(title: _pageNames[6])));
+    _itemData.add(RouteBean(
+        _pageNames[7], (context) => DataLoaderPage(title: _pageNames[7])));
   }
 
   @override
